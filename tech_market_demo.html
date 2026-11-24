@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تک‌مارکت | فروش قطعات کامپیوتر</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#0a1020;--panel:#111b30;--panel2:#16233c;--line:#263653;--muted:#9aabc4;--text:#f4f7ff;--blue:#5b8cff;--cyan:#48d9d0;--orange:#ffb45b;--green:#65d6a2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#1c3158 0,transparent 36%),var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif}button,input,select{font:inherit}button{cursor:pointer;border:0}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{border-bottom:1px solid #ffffff12;background:#0a1020cc;position:sticky;top:0;z-index:10;backdrop-filter:blur(16px)}.nav{height:76px;display:flex;align-items:center;gap:26px}.logo{font-size:23px;font-weight:900;white-space:nowrap}.logo b{color:var(--cyan)}.links{display:flex;gap:22px;color:#c3cee0;font-size:14px;flex:1}.links a{color:inherit;text-decoration:none}.actions{display:flex;gap:9px}.btn{padding:10px 16px;border-radius:12px;background:var(--panel2);color:white;border:1px solid var(--line);font-weight:700}.btn.primary{background:linear-gradient(135deg,var(--blue),#785cff);border:0}.btn.outline{background:transparent}.hero{padding:65px 0 42px;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}.eyebrow{color:var(--cyan);font-weight:700;font-size:13px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.35;margin:12px 0}.hero h1 span{color:var(--cyan)}.hero p{color:var(--muted);line-height:2;max-width:600px}.heroBtns{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}.heroArt{min-height:310px;border:1px solid #ffffff17;border-radius:28px;background:linear-gradient(145deg,#1c3154,#10192d);display:grid;place-items:center;position:relative;overflow:hidden}.chip{width:190px;height:190px;border-radius:28px;border:1px solid #83aaff77;background:linear-gradient(145deg,#243e69,#10192e);box-shadow:0 25px 70px #0008, inset 0 0 35px #6d9cff33;display:grid;place-items:center;transform:rotate(-8deg);font-size:50px;color:#9dc2ff}.chip:after{content:"";position:absolute;width:240px;height:240px;border:1px dashed #7eafff66;border-radius:50%}.float{position:absolute;background:#0b1427dd;border:1px solid #ffffff20;border-radius:13px;padding:10px 14px;font-size:13px}.f1{top:35px;right:28px}.f2{bottom:35px;left:28px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:10px 0 48px}.stat{background:#ffffff08;border:1px solid #ffffff12;padding:16px;border-radius:16px}.stat strong{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}section{padding:30px 0}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:20px}.sectionHead h2{font-size:25px;margin:0}.sectionHead p{color:var(--muted);margin:5px 0 0;font-size:13px}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 12px;text-align:center;color:white;transition:.2s}.cat:hover,.cat.active{border-color:var(--cyan);transform:translateY(-3px);background:#172a45}.cat i{display:block;font-style:normal;font-size:27px;margin-bottom:8px}.cat small{color:var(--muted)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.search{flex:1;min-width:190px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:white;outline:none}.filter{background:var(--panel);color:white;border:1px solid var(--line);border-radius:12px;padding:10px 14px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:14px;position:relative}.productArt{height:145px;border-radius:13px;background:linear-gradient(145deg,#1d3152,#10192b);display:grid;place-items:center;font-size:54px;margin-bottom:13px}.tag{position:absolute;top:24px;right:24px;background:#ffb45b;color:#261708;border-radius:7px;padding:3px 8px;font-size:11px;font-weight:800}.product h3{font-size:15px;margin:0 0 5px}.muted{color:var(--muted);font-size:12px}.priceRow{display:flex;align-items:center;justify-content:space-between;margin-top:14px}.price{font-weight:900}.old{color:#8392a9;text-decoration:line-through;font-size:11px;margin-right:5px}.add{background:#233c64;color:#dceaff;border-radius:10px;padding:8px 11px;font-size:12px;font-weight:700}.builder{background:linear-gradient(120deg,#172d4b,#111b30);border:1px solid #345079;border-radius:23px;padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.builder h2{margin:0 0 8px}.builder p{color:var(--muted);font-size:13px;line-height:1.9}.buildFields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field label{display:block;font-size:12px;color:#c5d2e5;margin-bottom:6px}.field select{width:100%;padding:11px;background:#0b1425;color:white;border:1px solid var(--line);border-radius:10px}.result{background:#0b1425;border:1px solid var(--line);border-radius:15px;padding:17px;align-self:stretch}.result h3{margin-top:0}.status{display:inline-block;border-radius:20px;background:#173c35;color:#85edc0;padding:5px 10px;font-size:12px}.result ul{padding-right:18px;color:#c3cee0;font-size:13px;line-height:2}.admin{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px}.adminGrid{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;align-items:end}.admin input{width:100%;background:#0b1425;color:white;border:1px solid var(--line);border-radius:10px;padding:11px}.admin label{font-size:12px;color:var(--muted);display:block;margin-bottom:6px}.notice{color:var(--muted);font-size:12px;line-height:1.8;margin-top:12px}.cartBar{position:fixed;bottom:18px;left:18px;background:#172b49;border:1px solid #496b9c;padding:12px 17px;border-radius:14px;box-shadow:0 10px 35px #0008;z-index:9;font-weight:700}.cartBar span{color:var(--cyan)}footer{border-top:1px solid #ffffff12;margin-top:50px;padding:30px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.hidden{display:none!important}
+@media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:42px}.heroArt{min-height:250px}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.builder{grid-template-columns:1fr}.adminGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.wrap{padding:0 14px}.nav{height:65px}.logo{font-size:19px}.actions .btn{padding:8px 10px;font-size:12px}.hero h1{font-size:35px}.stats{gap:7px}.stat{padding:12px}.stat strong{font-size:16px}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:1fr 1fr;gap:9px}.product{padding:9px}.productArt{height:110px;font-size:42px}.product h3{font-size:13px}.price{font-size:12px}.add{padding:7px}.buildFields{grid-template-columns:1fr}.adminGrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+<div class="logo">تک<b>مارکت</b></div>
+<nav class="links"><a href="#categories">دسته‌بندی‌ها</a><a href="#products">فروشگاه</a><a href="#builder">اسمبل هوشمند</a><a href="#admin">مدیریت</a></nav>
+<div class="actions"><button class="btn outline" onclick="document.querySelector('#admin').scrollIntoView({behavior:'smooth'})">پنل مدیریت</button><button class="btn primary" onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">خرید قطعات</button></div>
+</div></header>
+<main class="wrap">
+<div class="hero">
+<div><div class="eyebrow">فروشگاه تخصصی قطعات کامپیوتر</div><h1>سیستم دلخواهت را<br><span>هوشمندانه بساز.</span></h1><p>از انتخاب پردازنده و کارت گرافیک تا حافظه، مادربرد و تجهیزات جانبی؛ قطعات مناسب را پیدا کن و با اسمبل هوشمند، سازگاری انتخاب‌هایت را بررسی کن.</p><div class="heroBtns"><button class="btn primary" onclick="document.querySelector('#builder').scrollIntoView({behavior:'smooth'})">شروع اسمبل هوشمند ←</button><button class="btn" onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">مشاهده تخفیف‌ها</button></div></div>
+<div class="heroArt"><div class="chip">✦</div><div class="float f1">⚡ قطعات منتخب و به‌روز</div><div class="float f2">✓ بررسی سازگاری قطعات</div></div>
+</div>
+<div class="stats"><div class="stat"><strong>۶ دسته اصلی</strong><span>قطعات و لوازم کامپیوتر</span></div><div class="stat"><strong>اسمبل هوشمند</strong><span>راهنمای انتخاب قطعات سازگار</span></div><div class="stat"><strong>تخفیف‌های ویژه</strong><span>پیشنهادهای منتخب فروشگاه</span></div></div>
+<section id="categories"><div class="sectionHead"><div><h2>دسته‌بندی قطعات</h2><p>برای مشاهده محصولات، یک دسته را انتخاب کن.</p></div></div>
+<div class="categories">
+<button class="cat active" data-cat="همه" onclick="setCat('همه',this)"><i>▦</i>همه قطعات<small>مشاهده همه</small></button>
+<button class="cat" data-cat="CPU" onclick="setCat('CPU',this)"><i>▣</i>پردازنده CPU<small>قدرت پردازش</small></button>
+<button class="cat" data-cat="GPU" onclick="setCat('GPU',this)"><i>▧</i>کارت گرافیک GPU<small>پردازش تصویر</small></button>
+<button class="cat" data-cat="RAM" onclick="setCat('RAM',this)"><i>▤</i>حافظه RAM<small>حافظه موقت</small></button>
+<button class="cat" data-cat="مادربرد" onclick="setCat('مادربرد',this)"><i>▩</i>مادربرد<small>اتصال قطعات</small></button>
+<button class="cat" data-cat="خنک‌کننده" onclick="setCat('خنک‌کننده',this)"><i>❄</i>خنک‌کننده<small>تهویه سیستم</small></button>
+<button class="cat" data-cat="ذخیره‌سازی" onclick="setCat('ذخیره‌سازی',this)"><i>▱</i>ذخیره‌سازی<small>SSD و هارد</small></button>
+<button class="cat" data-cat="کیس" onclick="setCat('کیس',this)"><i>▣</i>کیس<small>بدنه سیستم</small></button>
+<button class="cat" data-cat="تجهیزات جانبی" onclick="setCat('تجهیزات جانبی',this)"><i>⌨</i>تجهیزات جانبی<small>لوازم کاربردی</small></button>
+<button class="cat" data-cat="تجهیزات شبکه" onclick="setCat('تجهیزات شبکه',this)"><i>⌁</i>تجهیزات شبکه<small>اتصال و ارتباط</small></button>
+<button class="cat" data-cat="قطعات تزئینی" onclick="setCat('قطعات تزئینی',this)"><i>✧</i>قطعات تزئینی<small>نورپردازی و زیبایی</small></button>
+<button class="cat" data-cat="سایر" onclick="setCat('سایر',this)"><i>＋</i>سایر قطعات<small>موارد تکمیلی</small></button>
+</div></section>
+<section id="products"><div class="sectionHead"><div><h2>محصولات فروشگاه</h2><p>نمونه محصولات نمایشی؛ نام و قیمت‌ها قابل ویرایش هستند.</p></div><span class="muted" id="count"></span></div>
+<div class="toolbar"><input class="search" id="search" placeholder="جست‌وجوی قطعه یا محصول..." oninput="renderProducts()"><select class="filter" id="sort" onchange="renderProducts()"><option value="default">مرتب‌سازی پیش‌فرض</option><option value="cheap">ارزان‌ترین</option><option value="expensive">گران‌ترین</option></select><select class="filter" id="onlySale" onchange="renderProducts()"><option value="all">همه محصولات</option><option value="sale">فقط تخفیف‌دارها</option></select></div>
+<div class="products" id="productList"></div>
+</section>
+<section id="builder"><div class="builder">
+<div><div class="eyebrow">SMART BUILD</div><h2>اسمبل هوشمند سیستم</h2><p>قطعات پیشنهادی را انتخاب کن تا یک بررسی اولیه از سازگاری آن‌ها ببینی. این ابزار نمونه‌ی نمایشی است و برای بررسی دقیق مدل‌های واقعی باید مشخصات فنی هر محصول به آن متصل شود.</p>
+<div class="buildFields">
+<div class="field"><label>پردازنده (CPU)</label><select id="cpu"><option value="intel">Intel</option><option value="amd">AMD</option></select></div>
+<div class="field"><label>مادربرد</label><select id="board"><option value="intel">مادربرد سازگار با Intel</option><option value="amd">مادربرد سازگار با AMD</option></select></div>
+<div class="field"><label>حافظه RAM</label><select id="ram"><option>DDR5</option><option>DDR4</option></select></div>
+<div class="field"><label>کارت گرافیک</label><select id="gpu"><option>گرافیک میان‌رده</option><option>گرافیک قدرتمند</option><option>بدون کارت گرافیک مجزا</option></select></div>
+</div><button class="btn primary" style="margin-top:15px" onclick="checkBuild()">بررسی سازگاری قطعات</button>
+</div>
+<div class="result" id="buildResult"><span class="status">آماده بررسی</span><h3>گزارش اسمبل شما</h3><p class="muted">پردازنده و مادربرد را انتخاب کن و دکمه بررسی را بزن.</p></div>
+</div></section>
+<section id="admin"><div class="sectionHead"><div><h2>پنل مدیریت فروشگاه</h2><p>مدیریت نمونه‌ای قیمت و تخفیف محصولات</p></div></div>
+<div class="admin"><div class="adminGrid">
+<div><label>رمز ورود نمایشی</label><input id="adminPass" type="password" placeholder="رمز پنل را وارد کن"></div>
+<div><label>انتخاب محصول</label><select id="adminProduct"></select></div>
+<div><label>قیمت جدید (تومان)</label><input id="newPrice" type="number" min="0" placeholder="مثلاً 12500000"></div>
+<button class="btn primary" onclick="updatePrice()">ثبت تغییرات</button>
+</div><div class="notice">رمز نمایشی این نسخه: <b>admin123</b>. این پنل فقط برای پیش‌نمایش فرانت‌اند است؛ تغییرات در همین صفحه اعمال می‌شوند. برای استفاده واقعی، ورود امن، پایگاه داده و سطح دسترسی سمت سرور لازم است.</div></div></section>
+</main>
+<div class="cartBar">سبد خرید: <span id="cartCount">۰</span> کالا <span id="cartTotal"></span></div>
+<footer><div class="wrap foot"><div><b>تک‌مارکت</b> | فروشگاه قطعات کامپیوتر</div><div>طراحی نمونه بر اساس موارد نوشته‌شده روی تخته</div><div>© ۱۴۰۵</div></div></footer>
+<script>
+const products=[
+{id:1,name:'پردازنده Core i5 نسل جدید',cat:'CPU',price:12500000,old:13900000,icon:'▣',desc:'مناسب کاربری روزمره و بازی'},
+{id:2,name:'پردازنده Ryzen 7',cat:'CPU',price:18900000,old:0,icon:'▣',desc:'پردازش سریع و چند‌هسته‌ای'},
+{id:3,name:'کارت گرافیک GeForce RTX',cat:'GPU',price:38500000,old:41900000,icon:'▧',desc:'مناسب بازی و طراحی'},
+{id:4,name:'کارت گرافیک Radeon',cat:'GPU',price:27900000,old:0,icon:'▧',desc:'عملکرد گرافیکی قدرتمند'},
+{id:5,name:'حافظه RAM DDR5 ظرفیت ۱۶GB',cat:'RAM',price:4200000,old:4800000,icon:'▤',desc:'سرعت بالا برای سیستم جدید'},
+{id:6,name:'مادربرد سری حرفه‌ای',cat:'مادربرد',price:9800000,old:0,icon:'▩',desc:'درگاه‌های ارتباطی متنوع'},
+{id:7,name:'خنک‌کننده پردازنده',cat:'خنک‌کننده',price:2350000,old:2750000,icon:'❄',desc:'خنک‌کنندگی کم‌صدا'},
+{id:8,name:'حافظه SSD یک ترابایت',cat:'ذخیره‌سازی',price:3900000,old:0,icon:'▱',desc:'ذخیره‌سازی سریع اطلاعات'},
+{id:9,name:'کیس گیمینگ با نورپردازی',cat:'کیس',price:5600000,old:6200000,icon:'▣',desc:'طراحی مدرن با تهویه مناسب'},
+{id:10,name:'کیبورد و ماوس',cat:'تجهیزات جانبی',price:1850000,old:0,icon:'⌨',desc:'مجموعه کاربردی رومیزی'},
+{id:11,name:'روتر دو بانده',cat:'تجهیزات شبکه',price:3100000,old:3500000,icon:'⌁',desc:'اتصال پایدار شبکه'},
+{id:12,name:'فن RGB و نوار نورپردازی',cat:'قطعات تزئینی',price:950000,old:0,icon:'✧',desc:'زیباسازی فضای کیس'}
+];
+let active='همه',cart=0,total=0;
+const fmt=n=>new Intl.NumberFormat('fa-IR').format(n)+' تومان';
+function renderProducts(){
+ let q=document.getElementById('search').value.trim().toLowerCase(),sort=document.getElementById('sort').value,sale=document.getElementById('onlySale').value;
+ let list=products.filter(p=>(active==='همه'||p.cat===active)&&(!q||(p.name+' '+p.cat+' '+p.desc).toLowerCase().includes(q))&&(sale==='all'||p.old>p.price));
+ if(sort==='cheap')list.sort((a,b)=>a.price-b.price);if(sort==='expensive')list.sort((a,b)=>b.price-a.price);
+ document.getElementById('count').textContent=new Intl.NumberFormat('fa-IR').format(list.length)+' محصول';
+ document.getElementById('productList').innerHTML=list.map(p=>`<article class="product">${p.old>p.price?'<span class="tag">تخفیف ویژه</span>':''}<div class="productArt">${p.icon}</div><h3>${p.name}</h3><div class="muted">${p.desc}</div><div class="priceRow"><div class="price">${fmt(p.price)} ${p.old>p.price?`<span class="old">${new Intl.NumberFormat('fa-IR').format(p.old)}</span>`:''}</div><button class="add" onclick="addCart(${p.id})">افزودن +</button></div></article>`).join('')||'<p class="muted">محصولی با این مشخصات پیدا نشد.</p>';
+}
+function setCat(cat,el){active=cat;document.querySelectorAll('.cat').forEach(x=>x.classList.remove('active'));el.classList.add('active');renderProducts()}
+function addCart(id){let p=products.find(x=>x.id===id);cart++;total+=p.price;document.getElementById('cartCount').textContent=new Intl.NumberFormat('fa-IR').format(cart);document.getElementById('cartTotal').textContent=' · '+fmt(total)}
+function checkBuild(){
+ let cpu=document.getElementById('cpu').value,board=document.getElementById('board').value,ram=document.getElementById('ram').value;
+ let ok=cpu===board,box=document.getElementById('buildResult');
+ box.innerHTML=`<span class="status" style="${ok?'':'background:#4a2a25;color:#ffc0a9'}">${ok?'بررسی اولیه: سازگار':'نیاز به اصلاح انتخاب'}</span><h3>گزارش اسمبل شما</h3><ul><li>پردازنده: ${cpu==='intel'?'Intel':'AMD'}</li><li>مادربرد: ${board==='intel'?'سازگار با Intel':'سازگار با AMD'}</li><li>حافظه: ${ram}</li><li>کارت گرافیک: ${document.getElementById('gpu').value}</li></ul><p style="font-size:12px;color:${ok?'#85edc0':'#ffc0a9'}">${ok?'پردازنده و مادربرد در این بررسی نمونه با یکدیگر سازگارند.':'پردازنده و مادربرد انتخابی هم‌خوانی ندارند؛ نوع مادربرد را تغییر بده.'}</p><p class="muted">سازگاری RAM، توان پاور، ابعاد کیس و نسخه BIOS در این دموی ساده بررسی نمی‌شوند.</p>`;
+}
+function fillAdmin(){document.getElementById('adminProduct').innerHTML=products.map(p=>`<option value="${p.id}">${p.name}</option>`).join('')}
+function updatePrice(){
+ if(document.getElementById('adminPass').value!=='admin123'){alert('رمز ورود صحیح نیست.');return}
+ let p=products.find(x=>x.id==document.getElementById('adminProduct').value),v=Number(document.getElementById('newPrice').value);
+ if(!p||!v||v<0){alert('قیمت معتبر وارد کن.');return}
+ p.price=v;renderProducts();alert('قیمت در پیش‌نمایش صفحه به‌روزرسانی شد.');
+}
+fillAdmin();renderProducts();
+</script>
+</body></html>
